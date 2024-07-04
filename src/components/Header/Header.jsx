@@ -5,6 +5,9 @@ import { Container, Row } from "reactstrap";
 import "./header.css";
 
 import UserIcon from "../../assets/images/user-icon.png";
+import Bag from "../../assets/shopping-bag-line.svg";
+import Heart from "../../assets/heart-line.svg";
+import Menu from "../../assets/menu-line.svg";
 
 const Header = () => {
   return (
@@ -14,30 +17,36 @@ const Header = () => {
           <div className="nav__wrapper">
             <div className="logo">
               <p>
-                <span>E</span>-store
+                <span>E</span>store
               </p>
             </div>
 
             <div className="navigation">
               <ul className="menu">
                 <li className="nav__item">
-                  <NavLink to="/home">Home</NavLink>
+                  <NavLink className="nav__item-link" to="/home">
+                    Home
+                  </NavLink>
                 </li>
                 <li className="nav__item">
-                  <NavLink to="/shop">Shop</NavLink>
+                  <NavLink className="nav__item-link" to="/shop">
+                    Shop
+                  </NavLink>
                 </li>
                 <li className="nav__item">
-                  <NavLink to="/cart">Cart</NavLink>
+                  <NavLink className="nav__item-link" to="/cart">
+                    Cart
+                  </NavLink>
                 </li>
               </ul>
             </div>
 
             <div className="nav__icons">
               <span className="fav__icon">
-                <i class="ri-heart-line"></i>
+                <img src={Heart} />
               </span>
               <span className="cart__icon">
-                <i class="ri-shopping-bag-line"></i>
+                <img src={Bag} />
               </span>
               <span>
                 <img src={UserIcon} alt="" />
@@ -45,9 +54,10 @@ const Header = () => {
             </div>
 
             <div className="mobile__menu">
-              <span><i class="ri-menu-line"></i></span>
+              <span>
+              <img src={Menu} alt="" />
+              </span>
             </div>
-
           </div>
         </Row>
       </Container>

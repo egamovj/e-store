@@ -46,7 +46,7 @@ h2 {
   font-size: var(--heading-fontSize);
 }
 
-ul {
+li {
   list-style: none;
 }
 
@@ -54,3 +54,11 @@ a {
   text-decoration: none;
   color: unset;
 }
+
+img {
+  width: 100%;
+}
+
+/* section {
+  padding: 60px 0px;
+} */
