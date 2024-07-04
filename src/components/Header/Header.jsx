@@ -32,9 +32,11 @@ const Header = () => {
         <Row>
           <div className="nav__wrapper">
             <div className="logo">
-              <p>
-                <span>E</span>store
-              </p>
+              <NavLink to="/">
+                <p>
+                  <span>E</span>store
+                </p>
+              </NavLink>
             </div>
 
             <div className="navigation">

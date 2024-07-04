@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 .logo p {
   font-size: 36px;
   font-weight: 700;
