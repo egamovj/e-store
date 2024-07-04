@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Routers = () => {
+const Footer = () => {
   return (
     <div>
-      
+      Footer
     </div>
   )
 }
 
-export default Routers
+export default Footer
